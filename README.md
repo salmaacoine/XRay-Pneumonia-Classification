@@ -1,28 +1,51 @@
-This repository contains a project for detecting pneumonia using chest X-ray images. The project utilizes convolutional neural networks (CNNs) to classify chest X-rays as either healthy or pneumonia-affected.
+📌 Aperçu du Projet
 
-Table of Contents: -Project Overview -Dataset -Model Architecture -Results -Installation -Usage -Contributing
+Ce projet vise à automatiser la détection de la pneumonie à partir d’images radiologiques.
+La pneumonie est une infection pulmonaire sérieuse, et son détection précoce permet d’améliorer la prise en charge.
 
-Project Overview: The goal of this project is to create a deep learning model capable of detecting pneumonia from chest X-ray images. Pneumonia is a serious lung infection, and early detection through X-ray analysis can improve treatment outcomes.
+Le modèle est entraîné sur le dataset Chest X-Ray Pneumonia Dataset, qui contient des milliers d’images annotées.
 
-This model is trained using the Chest X-ray dataset, which contains labeled X-ray images categorized as either normal or pneumonia-affected.
+📊 Dataset
 
-Dataset: The dataset used in this project is the ChestX-ray dataset, which contains the following classes:
+Le dataset contient deux classes :
 
-Normal: X-ray images of healthy lungs. Pneumonia: X-ray images of lungs affected by pneumonia. Dataset Structure The dataset is organized into three folders:
+Normal : Images de poumons sains
 
-train/: Training images. val/: Validation images. test/: Testing images.
-Model Architecture: The model uses a Convolutional Neural Network (CNN) for image classification, consisting of the following layers:
+Pneumonia : Pneumonie virale ou bactérienne
+🧠 Modèle & Architecture
 
-Convolutional layers for feature extraction. MaxPooling layers for downsampling. Fully connected dense layers for classification.
+Le modèle utilisé est un CNN :
 
-Model Summary: Input: Chest X-ray images Layers: Conv2D, MaxPooling, Flatten, Dense, Dropout Activation: ReLU, sigmoid Loss Function: Binary Crossentropy Optimizer: Adam
+Convolution 2D
 
-Results: Training Accuracy: 89% Validation Accuracy: 75% Test Accuracy: 75% Loss: 1.62
+MaxPooling
 
-The model achieves high accuracy in detecting pneumonia, providing a useful tool for assisting medical diagnosis.
+Flatten
 
-Made by ACOINE Salma, ACHOUKHI Razane
+Fully Connected layers
 
-5IIR 11 
+Dropout
 
-2025-2026
+Fonctions d’activation : ReLU, Sigmoid
+Fonction de perte : Binary Crossentropy
+Optimiseur : Adam
+
+📈 Résultats
+Dataset	Accuracy
+Train	89%
+Validation	75%
+Test	75%
+Loss finale : 1.62
+
+Des visualisations sont disponibles dans reports/ :
+
+ROC curve
+
+PR curve
+
+Confusion Matrix
+👩‍💻 Auteurs
+
+ACOINE Salma
+ACHOUKHI Razane
+5IIR 11 — 2025–2026
